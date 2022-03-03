@@ -1,0 +1,32 @@
+name: multiforkproject
+description: User fork
+version: 0.0.1
+author: vaishalipubsub@prophecy.io
+workflows:
+  workflows/VaishaliWorkflow:
+    name: VaishaliWorkflow
+    description: null
+    author: vaishalipubsub@prophecy.io
+    mode: batch
+    language: scala
+    createdAt: '2022-03-03 11:41:24'
+    datasets:
+      inputs:
+      - 223/datasets/VaishaliDataset
+      outputs: []
+    dependencies: {}
+datasets:
+  datasets/VaishaliDataset:
+    name: VaishaliDataset
+    description: ''
+    author: vaishalipubsub@prophecy.io
+    createdAt: '2022-03-03 11:48:07'
+    physicalDatasets:
+      pubsubfabric:
+        fabricId: 30
+        datasetType: File
+        description: ''
+        author: vaishalipubsub@prophecy.io
+        createdAt: '2022-03-03 11:48:07'
+schedules: {}
+libraries: []
